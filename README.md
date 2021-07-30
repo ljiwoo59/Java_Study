@@ -62,3 +62,6 @@ Test t = new Test();
 * instance 변수 자동 초기화 | 명시적 초기화 (사용자가 지정한 값)
 * 생성자 호출
 * 참조값 반환 (주소값)
+---
+## [Proeject](https://github.com/ljiwoo59/HappyHouse_Java)
+* 아파트 거래 정보 GUI 구현
