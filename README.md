@@ -1,5 +1,5 @@
 # Java_Study
-## [기본 및 응용](https://github.com/ljiwoo59/Java_Basics)
+## [기본 및 응용](https://github.com/ljiwoo59/Java_Study/tree/main/Java_Basics)
 * Type
 * Array
 
