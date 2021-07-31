@@ -162,3 +162,68 @@ Test t = new Test();
   * 참조 변수의 타입에 따라 연결이 달라짐
 * 상속 관계에서 객체의 *메소드*가 중복될 때 (Override 되었을 때)
   * 무조건 자식 클래스의 메소드가 호출됨
+---
+## Abstract Class
+* **추상 메소드**를 가지는 클래스
+ *  추상 메소드 : 함수의 body 가 없는 미완성의 함수 (구현부는 ; 로 대체)
+ *  일반 메소드만도 가질 수 있으나 추상 메소드가 하나 이상 이면 **무조건** 추상 클래스 여야만 함
+* **상속** 전용 클래스
+ * 객체를 생성할 수 없음
+ * 자식을 참조할 수 있음
+ * 자식 클래스에서 *abstract* 메소드를 재정의 하지 않은 경우, 해당 자식 클래스는 추상 클래스
+* 구현의 강제를 통해 프로그램의 안전성 향상
+* *Interface*에 있는 메소드 중 구현할 수 있는 메소드를 구현해 개발의 편의 지원
+
+## Interface
+* 최고 수준의 추상화 단계 : 모든 메소드가 ***abstract*** 형태 
+  * JDK 8 이상부터 default method 와 static method 구현 가능
+    * **default method** : 인터페이스에 선언 된 구현부가 있는 일반 메소드
+      * 접근 제한자는 ***public*** 으로 한정 (생략 가능)
+      * 기존 *interface* 기반으로 동작하는 라이브러리의 *interface*에 추가해야 하는 기능 발생 시
+      * ***super* class** 의 메소드 우선 : super class 가 구체적인 메소드를 갖는 경우 default method 무시
+      * 다른 *interface* 에서 동일한 이름의 메소드를 정의했을 때 *sub* class 는 반드시 **Override**
+    * **static method** : 인터페이스에 선언 된 static 메소드
+      * 별도의 객체가 필요 없음
+      * 구현체 클래스 없이 바로 인터페이스 이름으로 메소드에 접근해서 사용 가능
+* 모든 **멤버 변수**는 ***public static final*** 이며 생략 가능
+* 모든 **메소드**는 ***public abstract*** 이며 생략 가능
+* 인터페이스는 다른 인터페이스를 **extends**를 이용해 상속 가능
+  * 다중 상속 가능
+* 클래스에서 **implements** 를 이용해 ***interface*** 구현
+  * 모든 ***abstract*** 메소드를 **Override** 해서 구현하거나
+  * 구현하지 않을 경우 ***abstract* class**로 표시해야 함
+  * 다중 ***interface* implements** 가능
+  * 다형성은 조상 인터페이스에도 적용
+* 구현의 강제로 표준화 처리
+* 인터페이스를 통한 간접적인 클래스 사용으로 손쉬운 모듈 교체 지원
+* 서로 상속의 관계가 없는 클래스들에게 인터페이스를 통한 관계 부여로 다형성 확장
+* 모듈 간 독립적 프로그래밍 가능
+
+## Generic
+* 다양한 **타입**의 객체를 다루는 메소드나 컬렉션 클래스에 컴파일 시의 타입 체크를 해주는 기능
+  * 미리 사용할 타입을 명시해서 형 변환을 하지 않아도 됨
+  * 객체의 타입에 대한 안전성 향상 및 형 변환의 번거로움 감소
+* **클래스**또는 **인터페이스** 선언시 <> 에 타입 파라미터 표시
+  * 변수 쪽과 생성 쪽의 타입은 반드시 같아야함
+```java
+Class_Name<String> generic1 = new Class_Name<String>();
+Class_Name<Integer> generic2 = new Class_Name<>(); // 생략 가능
+```
+* 필요에 따라 구체적인 타입 제한 필요
+  * 인터페이스로 제한할 경우도 ***extends*** 사용
+  * 클래스와 함께 인터페이스 제약 조건을 이용할 경우 & 로 연결
+```java
+class TypeRestrict1<T extends Number>{}
+class TypeRestrict2<T extends Number & Comparable<String>>{}
+```
+* **Generic method** : 파라미터와 리턴 타입으로 타입 파라미터를 갖는 메소드
+  * 메소드 리턴 타입 앞에 타입 파라미터 변수 선언
+```java
+public <P> void method1(P p) {}
+public <P> P method2(P p) {return p;}
+```
+---
+## [Product_Management](https://github.com/ljiwoo59/Java_Study/tree/main/Java_OOP/ProductManage)
+* 재고 관리 프로그램 구현
+
+ 
