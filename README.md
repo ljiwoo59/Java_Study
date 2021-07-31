@@ -13,7 +13,6 @@
 * Abstract Class
 * Interface
 * Generic
-* Product_Management Programming
 
 
 ---
