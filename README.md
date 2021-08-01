@@ -21,6 +21,14 @@
 * Map
 * 정렬
 
+## [Exception Handling](https://github.com/ljiwoo59/Java_Study/tree/main/Java_Exception)
+* 예외와 에러
+* Exception Handling
+  * try ~ catch
+  * try ~ catch ~ finally
+  * try-with-resources
+* throws
+* 사용자 정의 예외
 ---
 ## [Proeject](https://github.com/ljiwoo59/HappyHouse_Java)
 * 아파트 거래 정보 GUI 구현
