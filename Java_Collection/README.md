@@ -58,7 +58,7 @@
 
 * 평균적으로 각 메소드의 수행 시간은 **O(n)** 이다
 
-### [ArrayList vs. LinkedList] (https://github.com/ljiwoo59/Java_Study/blob/main/Java_Collection/ArrayVsLinkedTest.java)
+### [ArrayList vs. LinkedList](https://github.com/ljiwoo59/Java_Study/blob/main/Java_Collection/ArrayVsLinkedTest.java)
 * 정적인 데이터 활용, 단순한 데이터 조회용 : **ArrayList**
 * 동적인 데이터 추가, 삭제가 많은 작업 : **LinkedList**
 #### ArrayList
