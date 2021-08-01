@@ -141,4 +141,7 @@ public void stringLengthSort() {
   Collections.sort(names, new StringLengthComparator());
 }
 ```
+---
+## [Product_Management](https://github.com/ljiwoo59/Java_Study/tree/main/Java_OOP/ProductManage)
+* 재고 관리 프로그램 구현
 
