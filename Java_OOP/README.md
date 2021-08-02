@@ -40,7 +40,7 @@ public void variableArgs(int... params) {}
   * 중복 코드에 대한 효율적 관리 가능
   * 메소드의 이름은 동일하지만 파라미터의 개수 또는 순서, 타입이 달라야 함
   * 리턴 타입은 의미 없음
-* [**Lambda**]()
+* [**Lambda**](https://github.com/ljiwoo59/Java_Study/blob/main/Java_OOP/LambdaTest.java)
   * 식별자 (함수 이름) 없이 실행 가능한 메소드
   * (*parameter* ...)->{실행문}
 
@@ -54,9 +54,9 @@ public void variableArgs(int... params) {}
 * *Top Level Class* 안의 클래스를 ***Inner Class*** 라 한다
 * **Static Class**
 * **Local Class**
-* [**Member Class**]()
+* [**Member Class**](https://github.com/ljiwoo59/Java_Study/blob/main/Java_OOP/MyCar.java)
   * 객체를 사용하기 위해서는 *Top Level Class* 객체가 먼저 생성되어야 함
-* [**Anonymous Class**]()
+* [**Anonymous Class**](https://github.com/ljiwoo59/Java_Study/blob/main/Java_OOP/MyTablet.java)
   * 추상 인터페이스/클래스를 상속 받는 자식 클래스의 정의 및 객체 생성을 하지 않고 해당 인터페이스/클래스의 추상 메소드를 사용하고자 하는 곳에 정의한다
 
 ## 객체
