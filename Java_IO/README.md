@@ -95,7 +95,7 @@
 * 단독으로 사용할 수 없음
 * *Node Stream* 을 생성자의 파라미터에 연결
 ```java
-BufferedReader br = new BufferedReader(new InputStreamReader(*System.in*));
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 ```
 #### 종료
 * 보조 스트림의 ***close()*** 를 호출하면 노드 스트림의 ***close()*** 까지 호출 됨
