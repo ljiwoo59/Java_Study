@@ -41,5 +41,5 @@
 * Swing
 
 ---
-## [Proeject](https://github.com/ljiwoo59/HappyHouse_Java)
+## [Project](https://github.com/ljiwoo59/HappyHouse_Java)
 * 아파트 거래 정보 GUI 구현
