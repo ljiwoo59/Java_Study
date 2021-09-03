@@ -1,4 +1,10 @@
 # Java_Study
+
+## Project
+### [아파트 거래 정보 GUI 구현](https://github.com/ljiwoo59/HappyHouse_Java)
+
+---
+
 ## [기본 및 응용](https://github.com/ljiwoo59/Java_Study/tree/main/Java_Basics)
 * Type
 * Array
@@ -40,6 +46,3 @@
 * DOM Parser
 * Swing
 
----
-## [Project](https://github.com/ljiwoo59/HappyHouse_Java)
-* 아파트 거래 정보 GUI 구현
