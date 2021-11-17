@@ -41,7 +41,7 @@
 * Process Stream
 * NIO
 
-## [Parsing && Swing](https://github.com/ljiwoo59/Java_Study/tree/main/Java_Parsing)
+## [Parsing & Swing](https://github.com/ljiwoo59/Java_Study/tree/main/Java_Parsing)
 * SAX Parser
 * DOM Parser
 * Swing
